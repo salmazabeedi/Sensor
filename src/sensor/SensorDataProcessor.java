@@ -31,11 +31,16 @@ public class SensorDataProcessor {
     }
 
 // calculates average of sensor data
+    
+    //edit by Renad Alharbi 
     private double average(double[] array) {
-        int i = 0;
+        if (array.length==0){
+            return 0;
+        }
+        
         double average = 0; //renamed this from val to avg
-        for (i = 0; i < array.length; i++) {
-            average += array[i];
+        for (double value : array) {
+            average += value;
         }
         return average / array.length;
     }

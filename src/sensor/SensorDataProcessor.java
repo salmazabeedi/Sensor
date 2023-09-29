@@ -47,9 +47,9 @@ public class SensorDataProcessor {
     //jj
      
     public void calculate(double d){
-        int i, j, k; //waad mnyawi - removed = 0  
+        int i, j, k; //waad mnyawi - removed = 0 because it was declared later in the loop   
         double[][][] data2 = new double[data.length][data[0].length][data[0][0].length];
-        BufferedWriter out;
+        BufferedWriter out = null; //shadan yousef - to ensure that the variable has a valid initial value
         // Write racing stats data into a file
         try {
             out = new BufferedWriter(new FileWriter("RacingStatsData.txt"));
@@ -82,7 +82,9 @@ public class SensorDataProcessor {
             }
             out.close();
         } catch (Exception e) {
-            System.out.println("Error: " + e); //chnaged = to : to ensures consistency with the error message format used throughout the code.
+            System.out.println("Error: " + e); /**waad mnyawi - changed = to : 
+             to ensures consistency with the error message format used 
+             throughout the code **/
         } // lama Khalil
     }
     

@@ -47,7 +47,7 @@ public class SensorDataProcessor {
     //jj
      
     public void calculate(double d){
-        int i, j, k = 0;
+        int i, j, k; //waad mnyawi - removed = 0  
         double[][][] data2 = new double[data.length][data[0].length][data[0][0].length];
         BufferedWriter out;
         // Write racing stats data into a file
@@ -82,7 +82,7 @@ public class SensorDataProcessor {
             }
             out.close();
         } catch (Exception e) {
-            System.out.println("Error= " + e);
+            System.out.println("Error: " + e); //chnaged = to : to ensures consistency with the error message format used throughout the code.
         } // lama Khalil
     }
     

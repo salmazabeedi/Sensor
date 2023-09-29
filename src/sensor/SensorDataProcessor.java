@@ -21,10 +21,8 @@ public class SensorDataProcessor {
 // constructor
 
 //no var type double               
-    /**
-     * public SensorDataProcessore([][][] data, double[][] limit) { this.data =
-     * data; this.limit = limit; } *
-     */
+
+    //salma zabeedi - fixed the constructor
     public SensorDataProcessor(double[][][] data, double[][] limit) {
         this.data = data;
         this.limit = limit;

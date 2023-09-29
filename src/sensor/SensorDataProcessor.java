@@ -82,7 +82,7 @@ public class SensorDataProcessor {
             }
             out.close();
         } catch (Exception e) {
-            System.out.println("Error: " + e); /**waad mnyawi - changed = to : 
+            System.out.println("Error: " + e); /**lama khalil - changed = to : 
              to ensures consistency with the error message format used 
              throughout the code **/
         } // lama Khalil
